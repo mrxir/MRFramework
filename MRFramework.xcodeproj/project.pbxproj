@@ -20,6 +20,8 @@
 		6704135B1F023C07005BDF55 /* NSJSONSerialization+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6704135A1F023C07005BDF55 /* NSJSONSerialization+Extension.m */; };
 		670413601F024CE9005BDF55 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6704135F1F024CE9005BDF55 /* UIView+Extension.m */; };
 		670413631F0255AC005BDF55 /* UIControl+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 670413621F0255AC005BDF55 /* UIControl+Extension.m */; };
+		670413661F025715005BDF55 /* UIStoryboard+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 670413651F025715005BDF55 /* UIStoryboard+Extension.m */; };
+		670413691F0277C4005BDF55 /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 670413671F0277C4005BDF55 /* Third.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,9 @@
 		6704135F1F024CE9005BDF55 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		670413611F0255AC005BDF55 /* UIControl+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Extension.h"; sourceTree = "<group>"; };
 		670413621F0255AC005BDF55 /* UIControl+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Extension.m"; sourceTree = "<group>"; };
+		670413641F025715005BDF55 /* UIStoryboard+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Extension.h"; sourceTree = "<group>"; };
+		670413651F025715005BDF55 /* UIStoryboard+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Extension.m"; sourceTree = "<group>"; };
+		670413681F0277C4005BDF55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Third.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +93,7 @@
 				6704133A1F0211EB005BDF55 /* ViewController.h */,
 				6704133B1F0211EB005BDF55 /* ViewController.m */,
 				6704133D1F0211EB005BDF55 /* Main.storyboard */,
+				670413671F0277C4005BDF55 /* Third.storyboard */,
 				670413401F0211EB005BDF55 /* Assets.xcassets */,
 				670413421F0211EC005BDF55 /* LaunchScreen.storyboard */,
 				670413451F0211EC005BDF55 /* Info.plist */,
@@ -144,6 +150,8 @@
 				6704135F1F024CE9005BDF55 /* UIView+Extension.m */,
 				670413611F0255AC005BDF55 /* UIControl+Extension.h */,
 				670413621F0255AC005BDF55 /* UIControl+Extension.m */,
+				670413641F025715005BDF55 /* UIStoryboard+Extension.h */,
+				670413651F025715005BDF55 /* UIStoryboard+Extension.m */,
 			);
 			path = "UIKit-Extension";
 			sourceTree = "<group>";
@@ -209,6 +217,7 @@
 			files = (
 				670413441F0211EC005BDF55 /* LaunchScreen.storyboard in Resources */,
 				670413411F0211EB005BDF55 /* Assets.xcassets in Resources */,
+				670413691F0277C4005BDF55 /* Third.storyboard in Resources */,
 				6704133F1F0211EB005BDF55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +233,7 @@
 				6704133C1F0211EB005BDF55 /* ViewController.m in Sources */,
 				670413391F0211EB005BDF55 /* AppDelegate.m in Sources */,
 				670413601F024CE9005BDF55 /* UIView+Extension.m in Sources */,
+				670413661F025715005BDF55 /* UIStoryboard+Extension.m in Sources */,
 				670413361F0211EB005BDF55 /* main.m in Sources */,
 				670413551F02303F005BDF55 /* NSObject+Extension.m in Sources */,
 				6704135B1F023C07005BDF55 /* NSJSONSerialization+Extension.m in Sources */,
@@ -248,6 +258,14 @@
 				670413431F0211EC005BDF55 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		670413671F0277C4005BDF55 /* Third.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				670413681F0277C4005BDF55 /* Base */,
+			);
+			name = Third.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
