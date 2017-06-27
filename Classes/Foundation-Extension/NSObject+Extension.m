@@ -13,6 +13,9 @@
 @end
 
 
+
+#pragma mark - property extension
+
 #import <objc/runtime.h>
 
 @implementation NSObject (Property)
@@ -31,6 +34,9 @@
 
 @end
 
+
+
+#pragma mark - object to dictionary converter
 
 @implementation NSObject (ModelConverter)
 
@@ -85,6 +91,65 @@
     
     return obj;
     
+}
+
+@end
+
+
+
+#pragma mark - desctiption extension
+
+@implementation NSObject (Description)
+
+- (NSString *)description
+{
+    if ([self isKindOfClass:[NSMutableArray class]]) {
+        return [[NSArray arrayWithArray:(id)self] description];
+    } else {
+        return [self description];
+    }
+}
+
+- (NSString *)stringWithUTF8
+{
+    BOOL isString = [self isKindOfClass:[NSString class]];
+    
+    BOOL isArray = [self isKindOfClass:[NSArray class]];
+    
+    BOOL isDictionary = [self isKindOfClass:[NSDictionary class]];
+    
+    BOOL isSet = [self isKindOfClass:[NSSet class]];
+    
+    BOOL isData = [self isKindOfClass:[NSData class]];
+    
+    if (isString || isArray || isDictionary || isSet) {
+        
+        if ([self respondsToSelector:@selector(length)]) {
+            if (![self performSelector:@selector(length)]) return self.description;
+        }
+        
+        if ([self respondsToSelector:@selector(count)]) {
+            if (![self performSelector:@selector(count)]) return self.description;
+        }
+        
+        NSString *tempString0 = self.description;
+        
+        NSString *tempString1 = [tempString0 stringByReplacingOccurrencesOfString:@"\\u" withString:@"\\U"];
+        NSString *tempString2 = [tempString1 stringByReplacingOccurrencesOfString:@"\"" withString:@"\\\""];
+        NSString *tempString3 = [[@"\"" stringByAppendingString:tempString2] stringByAppendingString:@"\""];
+        NSData *tempData = [tempString3 dataUsingEncoding:NSUTF8StringEncoding];
+        
+        return [NSPropertyListSerialization propertyListWithData:tempData options:NSPropertyListImmutable format:nil error:nil];
+        
+    } else if (isData) {
+        
+        return [[NSString alloc] initWithData:(NSData *)self encoding:NSUTF8StringEncoding];
+        
+    } else {
+        
+        return self.description.stringWithUTF8;
+        
+    }
 }
 
 @end
