@@ -17,6 +17,7 @@
 		670413501F022DAC005BDF55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6704134F1F022DAC005BDF55 /* Foundation.framework */; };
 		670413551F02303F005BDF55 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 670413541F02303F005BDF55 /* NSObject+Extension.m */; };
 		670413581F02344B005BDF55 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 670413571F02344B005BDF55 /* NSString+Extension.m */; };
+		6704135B1F023C07005BDF55 /* NSJSONSerialization+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6704135A1F023C07005BDF55 /* NSJSONSerialization+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		670413541F02303F005BDF55 /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
 		670413561F02344B005BDF55 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		670413571F02344B005BDF55 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		670413591F023C07005BDF55 /* NSJSONSerialization+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+Extension.h"; sourceTree = "<group>"; };
+		6704135A1F023C07005BDF55 /* NSJSONSerialization+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				670413541F02303F005BDF55 /* NSObject+Extension.m */,
 				670413561F02344B005BDF55 /* NSString+Extension.h */,
 				670413571F02344B005BDF55 /* NSString+Extension.m */,
+				670413591F023C07005BDF55 /* NSJSONSerialization+Extension.h */,
+				6704135A1F023C07005BDF55 /* NSJSONSerialization+Extension.m */,
 			);
 			path = "Foundation-Extension";
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 				670413391F0211EB005BDF55 /* AppDelegate.m in Sources */,
 				670413361F0211EB005BDF55 /* main.m in Sources */,
 				670413551F02303F005BDF55 /* NSObject+Extension.m in Sources */,
+				6704135B1F023C07005BDF55 /* NSJSONSerialization+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
