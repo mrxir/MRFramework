@@ -60,13 +60,6 @@
 @interface NSObject (Description)
 
 /**
- 防止当 mutable array 调用 description 输出内容显示异常问题
-
- @return NSString
- */
-- (NSString *)description;
-
-/**
  当UTF8编码字符被放入容器中,可以使用该方法将容器的 description 能够查看编码之前的原文,例如中文和表情符号.
  
  @return NSString

@@ -99,15 +99,6 @@
 
 @implementation NSObject (Description)
 
-- (NSString *)description
-{
-    if ([self isKindOfClass:[NSMutableArray class]]) {
-        return [[NSArray arrayWithArray:(id)self] description];
-    } else {
-        return [self description];
-    }
-}
-
 - (NSString *)stringWithUTF8
 {
     BOOL isString = [self isKindOfClass:[NSString class]];
