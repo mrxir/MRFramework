@@ -13,6 +13,10 @@
 		6704133F1F0211EB005BDF55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6704133D1F0211EB005BDF55 /* Main.storyboard */; };
 		670413411F0211EB005BDF55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 670413401F0211EB005BDF55 /* Assets.xcassets */; };
 		670413441F0211EC005BDF55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 670413421F0211EC005BDF55 /* LaunchScreen.storyboard */; };
+		6704134E1F022DA2005BDF55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6704134D1F022DA2005BDF55 /* UIKit.framework */; };
+		670413501F022DAC005BDF55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6704134F1F022DAC005BDF55 /* Foundation.framework */; };
+		670413551F02303F005BDF55 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 670413541F02303F005BDF55 /* NSObject+Extension.m */; };
+		670413581F02344B005BDF55 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 670413571F02344B005BDF55 /* NSString+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		670413401F0211EB005BDF55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		670413431F0211EC005BDF55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		670413451F0211EC005BDF55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6704134D1F022DA2005BDF55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6704134F1F022DAC005BDF55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		670413531F02303F005BDF55 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		670413541F02303F005BDF55 /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		670413561F02344B005BDF55 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		670413571F02344B005BDF55 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				670413501F022DAC005BDF55 /* Foundation.framework in Frameworks */,
+				6704134E1F022DA2005BDF55 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +54,8 @@
 		670413281F0211EB005BDF55 = {
 			isa = PBXGroup;
 			children = (
+				6704134C1F022D7B005BDF55 /* Frameworks */,
+				6704134B1F022D34005BDF55 /* Classes */,
 				670413331F0211EB005BDF55 /* MRFramework */,
 				670413321F0211EB005BDF55 /* Products */,
 			);
@@ -77,6 +91,42 @@
 				670413351F0211EB005BDF55 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6704134B1F022D34005BDF55 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				670413511F022DCC005BDF55 /* Foundation-Extension */,
+				670413521F022DCC005BDF55 /* UIKit-Extension */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6704134C1F022D7B005BDF55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6704134F1F022DAC005BDF55 /* Foundation.framework */,
+				6704134D1F022DA2005BDF55 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		670413511F022DCC005BDF55 /* Foundation-Extension */ = {
+			isa = PBXGroup;
+			children = (
+				670413531F02303F005BDF55 /* NSObject+Extension.h */,
+				670413541F02303F005BDF55 /* NSObject+Extension.m */,
+				670413561F02344B005BDF55 /* NSString+Extension.h */,
+				670413571F02344B005BDF55 /* NSString+Extension.m */,
+			);
+			path = "Foundation-Extension";
+			sourceTree = "<group>";
+		};
+		670413521F022DCC005BDF55 /* UIKit-Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UIKit-Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +201,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				670413581F02344B005BDF55 /* NSString+Extension.m in Sources */,
 				6704133C1F0211EB005BDF55 /* ViewController.m in Sources */,
 				670413391F0211EB005BDF55 /* AppDelegate.m in Sources */,
 				670413361F0211EB005BDF55 /* main.m in Sources */,
+				670413551F02303F005BDF55 /* NSObject+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +366,7 @@
 				6704134A1F0211EC005BDF55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
