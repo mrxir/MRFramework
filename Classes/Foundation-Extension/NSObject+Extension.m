@@ -16,8 +16,6 @@
 
 #pragma mark - property extension
 
-#import <objc/runtime.h>
-
 @implementation NSObject (Property)
 
 @dynamic objectIndexPath;
