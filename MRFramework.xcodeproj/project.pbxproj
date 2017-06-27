@@ -19,6 +19,7 @@
 		670413581F02344B005BDF55 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 670413571F02344B005BDF55 /* NSString+Extension.m */; };
 		6704135B1F023C07005BDF55 /* NSJSONSerialization+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6704135A1F023C07005BDF55 /* NSJSONSerialization+Extension.m */; };
 		670413601F024CE9005BDF55 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6704135F1F024CE9005BDF55 /* UIView+Extension.m */; };
+		670413631F0255AC005BDF55 /* UIControl+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 670413621F0255AC005BDF55 /* UIControl+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		6704135D1F024C67005BDF55 /* MRUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRUIKit.h; sourceTree = "<group>"; };
 		6704135E1F024CE9005BDF55 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		6704135F1F024CE9005BDF55 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		670413611F0255AC005BDF55 /* UIControl+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Extension.h"; sourceTree = "<group>"; };
+		670413621F0255AC005BDF55 /* UIControl+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				6704135D1F024C67005BDF55 /* MRUIKit.h */,
 				6704135E1F024CE9005BDF55 /* UIView+Extension.h */,
 				6704135F1F024CE9005BDF55 /* UIView+Extension.m */,
+				670413611F0255AC005BDF55 /* UIControl+Extension.h */,
+				670413621F0255AC005BDF55 /* UIControl+Extension.m */,
 			);
 			path = "UIKit-Extension";
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				670413361F0211EB005BDF55 /* main.m in Sources */,
 				670413551F02303F005BDF55 /* NSObject+Extension.m in Sources */,
 				6704135B1F023C07005BDF55 /* NSJSONSerialization+Extension.m in Sources */,
+				670413631F0255AC005BDF55 /* UIControl+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

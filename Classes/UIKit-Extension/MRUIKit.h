@@ -11,4 +11,6 @@
 
 #import "UIView+Extension.h"
 
+#import "UIControl+Extension.h"
+
 #endif /* MRUIKit_h */
