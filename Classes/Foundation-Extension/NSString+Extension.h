@@ -34,7 +34,7 @@
 
 #pragma mark - cipher extension
 
-#import <CommonCrypto/CommonDigest.h>
+// dependent file <CommonCrypto/CommonDigest.h>
 
 /**
  cipher extension

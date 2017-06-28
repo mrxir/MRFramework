@@ -44,6 +44,8 @@
 
 #pragma mark - cipher extension
 
+#import <CommonCrypto/CommonDigest.h>
+
 @implementation NSString (Cipher)
 
 #pragma mark - cipher - MD5
