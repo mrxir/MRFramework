@@ -12,6 +12,10 @@
 
 #import "UIStoryboard+Extension.h"
 
+#import "NSDictionary+Extension.h"
+
+#import "NSJSONSerialization+Extension.h"
+
 @interface RootViewController ()
 
 @property (nonatomic, weak) IBOutlet UIButton *pushButton;
@@ -35,6 +39,23 @@
         [self.navigationController pushViewController:demo animated:YES];
         
     }];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    NSDictionary *info = @{@"userId": @"mrxir",
+                           @"password": @"123456",
+                           @"e-mail": @"100885521@qq.com",
+                           @"stars": @{@"John": @"26",
+                                       @"Danny": @"22",
+                                       @"Nano": @"38"}};
+    
+    NSLog(@"Form %@", info.formattedIntoFormStyleString);
+    
+    NSLog(@"Json %@", [NSJSONSerialization stringWithJSONObject:info options:0 error:nil]);
     
 }
 

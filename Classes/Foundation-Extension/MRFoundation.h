@@ -15,4 +15,6 @@
 
 #import "NSJSONSerialization+Extension.h"
 
+#import "NSDictionary+Extension.h"
+
 #endif /* MRFoundation_h */

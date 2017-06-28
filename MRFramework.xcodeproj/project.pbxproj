@@ -23,6 +23,7 @@
 		6704136B1F03530B005BDF55 /* AnotherStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6704136A1F03530B005BDF55 /* AnotherStoryboard.storyboard */; };
 		6704136D1F035381005BDF55 /* DemoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6704136C1F035381005BDF55 /* DemoStoryboard.storyboard */; };
 		670413701F03565C005BDF55 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6704136F1F03565C005BDF55 /* RootViewController.m */; };
+		670413731F03D22A005BDF55 /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 670413721F03D22A005BDF55 /* NSDictionary+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		6704136C1F035381005BDF55 /* DemoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DemoStoryboard.storyboard; sourceTree = "<group>"; };
 		6704136E1F03565C005BDF55 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		6704136F1F03565C005BDF55 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		670413711F03D22A005BDF55 /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
+		670413721F03D22A005BDF55 /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 				670413571F02344B005BDF55 /* NSString+Extension.m */,
 				670413591F023C07005BDF55 /* NSJSONSerialization+Extension.h */,
 				6704135A1F023C07005BDF55 /* NSJSONSerialization+Extension.m */,
+				670413711F03D22A005BDF55 /* NSDictionary+Extension.h */,
+				670413721F03D22A005BDF55 /* NSDictionary+Extension.m */,
 			);
 			path = "Foundation-Extension";
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				670413731F03D22A005BDF55 /* NSDictionary+Extension.m in Sources */,
 				670413581F02344B005BDF55 /* NSString+Extension.m in Sources */,
 				670413391F0211EB005BDF55 /* AppDelegate.m in Sources */,
 				670413601F024CE9005BDF55 /* UIView+Extension.m in Sources */,
