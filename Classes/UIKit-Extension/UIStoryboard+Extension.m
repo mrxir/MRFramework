@@ -50,6 +50,8 @@
     _storyboardNames = storyboardNames;
     
     NSMutableArray *m_storyboardFiles = [NSMutableArray arrayWithCapacity:self.storyboardNames.count];
+
+#pragma mark - * 将来需要增加一个 storyboard identifier 重复的检测方法, 来抛出异常告知使用者 *
     
     [self.storyboardNames enumerateObjectsUsingBlock:^(__kindof NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
