@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="zVq-Bi-JLZ">
+            <objects>
+                <viewController id="PNg-LN-mln" customClass="RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="924-zr-3Wp"/>
+                        <viewControllerLayoutGuide type="bottom" id="YNf-OY-5kn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M2p-1H-odW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My navigation controller is the root view controller of this application. It's storyboard ID is 'ROOT'." textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXE-Wv-8YM">
+                                <rect key="frame" x="27.5" y="303" width="319" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="YCj-J3-dlU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmg-ET-gG7">
+                                <rect key="frame" x="88" y="414" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8L9-mc-oOz"/>
+                                    <constraint firstAttribute="width" constant="200" id="xdt-td-5Df"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Click to push"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KXE-Wv-8YM" firstAttribute="width" secondItem="M2p-1H-odW" secondAttribute="width" multiplier="0.85" id="3yj-T9-cKm"/>
+                            <constraint firstItem="KXE-Wv-8YM" firstAttribute="centerX" secondItem="M2p-1H-odW" secondAttribute="centerX" id="H1p-BG-B7E"/>
+                            <constraint firstItem="hmg-ET-gG7" firstAttribute="centerX" secondItem="M2p-1H-odW" secondAttribute="centerX" id="XJ6-VU-RXj"/>
+                            <constraint firstItem="KXE-Wv-8YM" firstAttribute="centerY" secondItem="M2p-1H-odW" secondAttribute="centerY" id="bsh-fj-SEv"/>
+                            <constraint firstItem="hmg-ET-gG7" firstAttribute="top" secondItem="KXE-Wv-8YM" secondAttribute="bottom" constant="50" id="d47-Yk-zFw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="ng1-6I-FT6"/>
+                    <connections>
+                        <outlet property="pushButton" destination="hmg-ET-gG7" id="OoG-9K-NGA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8yD-YW-Mha" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1719.2" y="122.78860569715144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rdK-x4-Zey">
+            <objects>
+                <navigationController storyboardIdentifier="ROOT" automaticallyAdjustsScrollViewInsets="NO" id="NBl-oa-mbR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TV7-8o-IgD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PNg-LN-mln" kind="relationship" relationship="rootViewController" id="6jW-hF-Ala"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXm-Jp-iSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
