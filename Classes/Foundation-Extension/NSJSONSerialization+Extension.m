@@ -20,8 +20,8 @@
 
 + (NSString *)stringWithJSONObject:(id)obj options:(NSJSONWritingOptions)opt error:(NSError *__autoreleasing *)error
 {
-    if ([NSJSONSerialization isValidJSONObject:self]) {
-        NSData *data = [NSJSONSerialization dataWithJSONObject:self options:opt error:error];
+    if ([NSJSONSerialization isValidJSONObject:obj]) {
+        NSData *data = [NSJSONSerialization dataWithJSONObject:obj options:opt error:error];
         return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     } else {
         return nil;
