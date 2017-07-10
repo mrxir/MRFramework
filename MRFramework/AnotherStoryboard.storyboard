@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Root View Controller-->
         <scene sceneID="zVq-Bi-JLZ">
             <objects>
                 <viewController id="PNg-LN-mln" customClass="RootViewController" sceneMemberID="viewController">
@@ -51,7 +51,7 @@
                             <constraint firstItem="hmg-ET-gG7" firstAttribute="top" secondItem="KXE-Wv-8YM" secondAttribute="bottom" constant="50" id="d47-Yk-zFw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="ng1-6I-FT6"/>
+                    <navigationItem key="navigationItem" id="ng1-6I-FT6"/>
                     <connections>
                         <outlet property="pushButton" destination="hmg-ET-gG7" id="OoG-9K-NGA"/>
                     </connections>

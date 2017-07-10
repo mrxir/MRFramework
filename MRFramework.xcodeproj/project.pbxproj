@@ -24,6 +24,9 @@
 		6704136D1F035381005BDF55 /* DemoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6704136C1F035381005BDF55 /* DemoStoryboard.storyboard */; };
 		670413701F03565C005BDF55 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6704136F1F03565C005BDF55 /* RootViewController.m */; };
 		670413731F03D22A005BDF55 /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 670413721F03D22A005BDF55 /* NSDictionary+Extension.m */; };
+		6775767E1F11162D00715F6B /* MRFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6775767D1F11162C00715F6B /* MRFramework.podspec */; };
+		677576811F11165F00715F6B /* UIApplication+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 677576801F11165F00715F6B /* UIApplication+Extension.m */; };
+		677576841F12997A00715F6B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677576831F12997A00715F6B /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +60,11 @@
 		6704136F1F03565C005BDF55 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		670413711F03D22A005BDF55 /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
 		670413721F03D22A005BDF55 /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
+		6775767D1F11162C00715F6B /* MRFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MRFramework.podspec; sourceTree = "<group>"; };
+		6775767F1F11165F00715F6B /* UIApplication+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Extension.h"; sourceTree = "<group>"; };
+		677576801F11165F00715F6B /* UIApplication+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Extension.m"; sourceTree = "<group>"; };
+		677576821F12997A00715F6B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		677576831F12997A00715F6B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,7 @@
 		670413281F0211EB005BDF55 = {
 			isa = PBXGroup;
 			children = (
+				6775767D1F11162C00715F6B /* MRFramework.podspec */,
 				6704134C1F022D7B005BDF55 /* Frameworks */,
 				6704134B1F022D34005BDF55 /* Classes */,
 				670413331F0211EB005BDF55 /* MRFramework */,
@@ -97,6 +106,8 @@
 				670413381F0211EB005BDF55 /* AppDelegate.m */,
 				6704136E1F03565C005BDF55 /* RootViewController.h */,
 				6704136F1F03565C005BDF55 /* RootViewController.m */,
+				677576821F12997A00715F6B /* ViewController.h */,
+				677576831F12997A00715F6B /* ViewController.m */,
 				6704133D1F0211EB005BDF55 /* Main.storyboard */,
 				6704136A1F03530B005BDF55 /* AnotherStoryboard.storyboard */,
 				6704136C1F035381005BDF55 /* DemoStoryboard.storyboard */,
@@ -160,6 +171,8 @@
 				670413621F0255AC005BDF55 /* UIControl+Extension.m */,
 				670413641F025715005BDF55 /* UIStoryboard+Extension.h */,
 				670413651F025715005BDF55 /* UIStoryboard+Extension.m */,
+				6775767F1F11165F00715F6B /* UIApplication+Extension.h */,
+				677576801F11165F00715F6B /* UIApplication+Extension.m */,
 			);
 			path = "UIKit-Extension";
 			sourceTree = "<group>";
@@ -225,6 +238,7 @@
 			files = (
 				670413441F0211EC005BDF55 /* LaunchScreen.storyboard in Resources */,
 				6704136B1F03530B005BDF55 /* AnotherStoryboard.storyboard in Resources */,
+				6775767E1F11162D00715F6B /* MRFramework.podspec in Resources */,
 				670413411F0211EB005BDF55 /* Assets.xcassets in Resources */,
 				6704133F1F0211EB005BDF55 /* Main.storyboard in Resources */,
 				6704136D1F035381005BDF55 /* DemoStoryboard.storyboard in Resources */,
@@ -239,10 +253,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				670413731F03D22A005BDF55 /* NSDictionary+Extension.m in Sources */,
+				677576811F11165F00715F6B /* UIApplication+Extension.m in Sources */,
 				670413581F02344B005BDF55 /* NSString+Extension.m in Sources */,
 				670413391F0211EB005BDF55 /* AppDelegate.m in Sources */,
 				670413601F024CE9005BDF55 /* UIView+Extension.m in Sources */,
 				670413661F025715005BDF55 /* UIStoryboard+Extension.m in Sources */,
+				677576841F12997A00715F6B /* ViewController.m in Sources */,
 				670413361F0211EB005BDF55 /* main.m in Sources */,
 				670413701F03565C005BDF55 /* RootViewController.m in Sources */,
 				670413551F02303F005BDF55 /* NSObject+Extension.m in Sources */,

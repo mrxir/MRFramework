@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--ViewController-->
         <scene sceneID="Cf4-x3-CbE">
             <objects>
-                <viewController storyboardIdentifier="DEMO" id="mfw-jY-mWi" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DEMO" id="mfw-jY-mWi" userLabel="ViewController" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="85Q-cl-tWP"/>
                         <viewControllerLayoutGuide type="bottom" id="Q3x-1U-UcA"/>
@@ -22,8 +22,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a demo controller." textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34q-2j-XSP">
-                                <rect key="frame" x="27.5" y="323.5" width="319" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm " textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34q-2j-XSP">
+                                <rect key="frame" x="27.5" y="100" width="319" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="eSA-ea-Rgf"/>
                                 </constraints>
@@ -31,19 +31,47 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DyO-bd-tl1">
+                                <rect key="frame" x="20" y="141" width="335" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="00m-39-0Ee"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Push me"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlD-Nr-kiu">
+                                <rect key="frame" x="20" y="241" width="335" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TV8-Wm-p1q"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Present me"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="DyO-bd-tl1" firstAttribute="leading" secondItem="zyu-Y8-esn" secondAttribute="leading" constant="20" id="3yY-LH-JEt"/>
                             <constraint firstItem="34q-2j-XSP" firstAttribute="width" secondItem="zyu-Y8-esn" secondAttribute="width" multiplier="0.85" id="7LK-w4-Kqv"/>
+                            <constraint firstItem="wlD-Nr-kiu" firstAttribute="top" secondItem="DyO-bd-tl1" secondAttribute="bottom" constant="50" id="GEO-fc-yjH"/>
+                            <constraint firstAttribute="trailing" secondItem="wlD-Nr-kiu" secondAttribute="trailing" constant="20" id="HHW-Yh-9VV"/>
+                            <constraint firstItem="wlD-Nr-kiu" firstAttribute="leading" secondItem="zyu-Y8-esn" secondAttribute="leading" constant="20" id="aNH-2f-F8f"/>
                             <constraint firstItem="34q-2j-XSP" firstAttribute="centerX" secondItem="zyu-Y8-esn" secondAttribute="centerX" id="dsp-eM-eua"/>
-                            <constraint firstItem="34q-2j-XSP" firstAttribute="centerY" secondItem="zyu-Y8-esn" secondAttribute="centerY" id="ef6-JK-olE"/>
+                            <constraint firstItem="DyO-bd-tl1" firstAttribute="top" secondItem="34q-2j-XSP" secondAttribute="bottom" constant="20" id="eYC-em-M7s"/>
+                            <constraint firstItem="34q-2j-XSP" firstAttribute="top" secondItem="zyu-Y8-esn" secondAttribute="top" constant="100" id="ef6-JK-olE"/>
+                            <constraint firstAttribute="trailing" secondItem="DyO-bd-tl1" secondAttribute="trailing" constant="20" id="zsL-to-OhC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="bnP-Y8-hlc"/>
+                    <connections>
+                        <outlet property="imLabel" destination="34q-2j-XSP" id="lFj-xR-LsJ"/>
+                        <outlet property="presentButton" destination="wlD-Nr-kiu" id="lJn-dk-alc"/>
+                        <outlet property="pushButton" destination="DyO-bd-tl1" id="AYC-nU-3eK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PZN-3X-mZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1719.2" y="122.78860569715144"/>
+            <point key="canvasLocation" x="1725.5999999999999" y="177.66116941529236"/>
         </scene>
     </scenes>
 </document>

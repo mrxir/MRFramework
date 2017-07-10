@@ -30,7 +30,6 @@
     
     [self.pushButton handleWithEvents:UIControlEventTouchUpInside completion:^(__kindof UIControl *control) {
         
-        
         // use this method, you don't need to care which storyboard has owned which controller
         UIViewController *demo = [UIStoryboard matchControllerForIdentifier:@"DEMO"];
         
