@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,11 +42,20 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Click to push"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Stj-rw-WGt">
+                                <rect key="frame" x="137" y="94" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Stj-rw-WGt" secondAttribute="height" multiplier="1:1" id="k9i-ZY-arv"/>
+                                    <constraint firstAttribute="width" constant="100" id="tS2-Xk-30o"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Stj-rw-WGt" firstAttribute="centerX" secondItem="M2p-1H-odW" secondAttribute="centerX" id="3nH-yS-ywm"/>
                             <constraint firstItem="KXE-Wv-8YM" firstAttribute="width" secondItem="M2p-1H-odW" secondAttribute="width" multiplier="0.85" id="3yj-T9-cKm"/>
                             <constraint firstItem="KXE-Wv-8YM" firstAttribute="centerX" secondItem="M2p-1H-odW" secondAttribute="centerX" id="H1p-BG-B7E"/>
+                            <constraint firstItem="Stj-rw-WGt" firstAttribute="top" secondItem="924-zr-3Wp" secondAttribute="bottom" constant="30" id="HvE-u8-Qcu"/>
                             <constraint firstItem="hmg-ET-gG7" firstAttribute="centerX" secondItem="M2p-1H-odW" secondAttribute="centerX" id="XJ6-VU-RXj"/>
                             <constraint firstItem="KXE-Wv-8YM" firstAttribute="centerY" secondItem="M2p-1H-odW" secondAttribute="centerY" id="bsh-fj-SEv"/>
                             <constraint firstItem="hmg-ET-gG7" firstAttribute="top" secondItem="KXE-Wv-8YM" secondAttribute="bottom" constant="50" id="d47-Yk-zFw"/>
@@ -53,6 +63,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ng1-6I-FT6"/>
                     <connections>
+                        <outlet property="imageView" destination="Stj-rw-WGt" id="YzN-RY-x8T"/>
                         <outlet property="pushButton" destination="hmg-ET-gG7" id="OoG-9K-NGA"/>
                     </connections>
                 </viewController>

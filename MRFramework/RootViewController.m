@@ -16,9 +16,13 @@
 
 #import "NSJSONSerialization+Extension.h"
 
+#import "UIImage+Extension.h"
+
 @interface RootViewController ()
 
 @property (nonatomic, weak) IBOutlet UIButton *pushButton;
+
+@property (nonatomic, weak) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -27,6 +31,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIColor *color = [UIColor brownColor];
+    self.imageView.image = [UIImage imageWithColor:color size:self.imageView.bounds.size];
+    self.imageView.image = [UIImage resizableImageWithColor:color cornerRadius:4];
     
     [self.pushButton handleWithEvents:UIControlEventTouchUpInside completion:^(__kindof UIControl *control) {
         

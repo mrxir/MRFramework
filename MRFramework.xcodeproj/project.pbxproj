@@ -24,6 +24,7 @@
 		6704136D1F035381005BDF55 /* DemoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6704136C1F035381005BDF55 /* DemoStoryboard.storyboard */; };
 		670413701F03565C005BDF55 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6704136F1F03565C005BDF55 /* RootViewController.m */; };
 		670413731F03D22A005BDF55 /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 670413721F03D22A005BDF55 /* NSDictionary+Extension.m */; };
+		670F487E1F15BB9400C20F4E /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 670F487D1F15BB9400C20F4E /* UIImage+Extension.m */; };
 		6775767E1F11162D00715F6B /* MRFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6775767D1F11162C00715F6B /* MRFramework.podspec */; };
 		677576811F11165F00715F6B /* UIApplication+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 677576801F11165F00715F6B /* UIApplication+Extension.m */; };
 		677576841F12997A00715F6B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677576831F12997A00715F6B /* ViewController.m */; };
@@ -60,6 +61,8 @@
 		6704136F1F03565C005BDF55 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		670413711F03D22A005BDF55 /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
 		670413721F03D22A005BDF55 /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
+		670F487C1F15BB9400C20F4E /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		670F487D1F15BB9400C20F4E /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		6775767D1F11162C00715F6B /* MRFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MRFramework.podspec; sourceTree = "<group>"; };
 		6775767F1F11165F00715F6B /* UIApplication+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Extension.h"; sourceTree = "<group>"; };
 		677576801F11165F00715F6B /* UIApplication+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Extension.m"; sourceTree = "<group>"; };
@@ -173,6 +176,8 @@
 				670413651F025715005BDF55 /* UIStoryboard+Extension.m */,
 				6775767F1F11165F00715F6B /* UIApplication+Extension.h */,
 				677576801F11165F00715F6B /* UIApplication+Extension.m */,
+				670F487C1F15BB9400C20F4E /* UIImage+Extension.h */,
+				670F487D1F15BB9400C20F4E /* UIImage+Extension.m */,
 			);
 			path = "UIKit-Extension";
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 				670413661F025715005BDF55 /* UIStoryboard+Extension.m in Sources */,
 				677576841F12997A00715F6B /* ViewController.m in Sources */,
 				670413361F0211EB005BDF55 /* main.m in Sources */,
+				670F487E1F15BB9400C20F4E /* UIImage+Extension.m in Sources */,
 				670413701F03565C005BDF55 /* RootViewController.m in Sources */,
 				670413551F02303F005BDF55 /* NSObject+Extension.m in Sources */,
 				6704135B1F023C07005BDF55 /* NSJSONSerialization+Extension.m in Sources */,
