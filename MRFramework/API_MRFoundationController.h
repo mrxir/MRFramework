@@ -1,5 +1,5 @@
 //
-//  RootViewController.h
+//  API_MRFoundationController.h
 //  MRFramework
 //
 //  Created by MrXir on 2017/7/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UITabBarController
+@interface API_MRFoundationController : UIViewController
 
 @end

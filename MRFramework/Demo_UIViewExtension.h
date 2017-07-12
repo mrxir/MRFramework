@@ -1,5 +1,5 @@
 //
-//  RootViewController.h
+//  Demo_UIViewExtension.h
 //  MRFramework
 //
 //  Created by MrXir on 2017/7/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UITabBarController
+@interface Demo_UIViewExtension : UIViewController
 
 @end

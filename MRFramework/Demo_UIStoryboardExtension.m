@@ -1,13 +1,13 @@
 //
-//  RootViewController.h
+//  Demo_UIStoryboardExtension.m
 //  MRFramework
 //
 //  Created by MrXir on 2017/7/12.
 //  Copyright © 2017年 MrXir. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "Demo_UIStoryboardExtension.h"
 
-@interface RootViewController : UITabBarController
+@implementation Demo_UIStoryboardExtension
 
 @end

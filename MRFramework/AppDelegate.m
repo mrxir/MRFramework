@@ -22,18 +22,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-#warning - How to use 'UIStoryboard+Extension' - step 1
-    
-    // first set storyboard names
     [UIStoryboard setStoryboardNames:@[@"Main",
-                                       @"AnotherStoryboard",
-                                       @"DemoStoryboard"]];
+                                       @"MRUIKit",
+                                       @"MRFoundation"]];
     
-    // after defined the controller storyboard identifie then you can use like this
-    
-    UIViewController *root = [UIStoryboard matchControllerForIdentifier:@"ROOT"];
-    
-    self.window.rootViewController = root;
+    self.window.rootViewController = [UIStoryboard matchControllerForIdentifier:@"ROOT"];
     
     return YES;
 }
