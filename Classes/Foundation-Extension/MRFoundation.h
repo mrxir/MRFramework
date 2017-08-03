@@ -17,4 +17,6 @@
 
 #import "NSDictionary+Extension.h"
 
+#import "NSURL+Extension.h"
+
 #endif /* MRFoundation_h */

@@ -40,6 +40,7 @@
 		670F48B21F15D81500C20F4E /* API_MRUIKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670F48B11F15D81500C20F4E /* API_MRUIKitController.m */; };
 		6775767E1F11162D00715F6B /* MRFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6775767D1F11162C00715F6B /* MRFramework.podspec */; };
 		677576811F11165F00715F6B /* UIApplication+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 677576801F11165F00715F6B /* UIApplication+Extension.m */; };
+		67D4E0591F32E6B0001CC534 /* NSURL+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D4E0581F32E6B0001CC534 /* NSURL+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +105,8 @@
 		6775767D1F11162C00715F6B /* MRFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MRFramework.podspec; sourceTree = "<group>"; };
 		6775767F1F11165F00715F6B /* UIApplication+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Extension.h"; sourceTree = "<group>"; };
 		677576801F11165F00715F6B /* UIApplication+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Extension.m"; sourceTree = "<group>"; };
+		67D4E0571F32E6B0001CC534 /* NSURL+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Extension.h"; sourceTree = "<group>"; };
+		67D4E0581F32E6B0001CC534 /* NSURL+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				6704135C1F024BC7005BDF55 /* MRFoundation.h */,
+				67D4E0571F32E6B0001CC534 /* NSURL+Extension.h */,
+				67D4E0581F32E6B0001CC534 /* NSURL+Extension.m */,
 				670413531F02303F005BDF55 /* NSObject+Extension.h */,
 				670413541F02303F005BDF55 /* NSObject+Extension.m */,
 				670413561F02344B005BDF55 /* NSString+Extension.h */,
@@ -355,6 +360,7 @@
 				670F48881F15C89500C20F4E /* Demo_UIControlExtension.m in Sources */,
 				670413731F03D22A005BDF55 /* NSDictionary+Extension.m in Sources */,
 				670F489F1F15C94200C20F4E /* Demo_NSJSONSerializationExtension.m in Sources */,
+				67D4E0591F32E6B0001CC534 /* NSURL+Extension.m in Sources */,
 				677576811F11165F00715F6B /* UIApplication+Extension.m in Sources */,
 				670413581F02344B005BDF55 /* NSString+Extension.m in Sources */,
 				670F488E1F15C8BC00C20F4E /* Demo_UIApplicationExtension.m in Sources */,
