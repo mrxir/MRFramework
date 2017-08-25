@@ -30,6 +30,19 @@
     objc_setAssociatedObject(self, @"objectIndexPath", objectIndexPath, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
+
+@dynamic objectKey;
+
+- (NSString *)objectKey
+{
+    return objc_getAssociatedObject(self, @"objectKey");
+}
+
+- (void)setObjectKey:(NSString *)objectKey
+{
+    objc_setAssociatedObject(self, @"objectKey", objectKey, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
 @end
 
 

@@ -29,6 +29,13 @@
 
 - (void)setObjectIndexPath:(NSIndexPath *)objectIndexPath;
 
+
+@property (nonatomic, copy) NSString *objectKey;
+
+- (NSString *)objectKey;
+
+- (void)setObjectKey:(NSString *)objectKey;
+
 @end
 
 
