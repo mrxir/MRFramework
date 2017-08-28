@@ -32,6 +32,8 @@ typedef void(^DetectForeignWordCompletion)(BOOL hasForeignWord, NSString *foreig
 
 - (void)detectForeignWordCompletion:(DetectForeignWordCompletion)detectCompletion;
 
+- (NSString *)filterWithCharactersInString:(NSString *)characters;
+
 @end
 
 

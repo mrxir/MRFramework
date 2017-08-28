@@ -56,6 +56,35 @@
     }];
 }
 
+- (NSString *)filterWithCharactersInString:(NSString *)characters
+{
+    NSScanner *scanner = [NSScanner scannerWithString:self];
+    
+    // Intermediate
+    NSMutableString *numberString = [NSMutableString string];
+    
+    NSCharacterSet *numbers = [NSCharacterSet characterSetWithCharactersInString:characters];
+    
+    NSString *tempStr;
+    
+    while (![scanner isAtEnd]) {
+        
+        // Throw away characters before the first number.
+        [scanner scanUpToCharactersFromSet:numbers intoString:NULL];
+        
+        // Collect numbers.
+        [scanner scanCharactersFromSet:numbers intoString:&tempStr];
+        
+        [numberString appendString:tempStr];
+        
+        tempStr = @"";
+    }
+    
+    // Result.
+    
+    return numberString;
+}
+
 @end
 
 
