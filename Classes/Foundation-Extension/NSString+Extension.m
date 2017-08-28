@@ -38,6 +38,24 @@
     return isValid;
 }
 
+- (void)detectForeignWordCompletion:(DetectForeignWordCompletion)detectCompletion
+{
+    [self enumerateSubstringsInRange:NSMakeRange(0, self.length) options:NSStringEnumerationByComposedCharacterSequences usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
+        
+        NSString *match = @"(^[\u4e00-\u9fa5]+$)";
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", match];
+        BOOL isChinese = [predicate evaluateWithObject:substring];
+        
+        if (!isChinese) {
+            
+            *stop = YES;
+            
+            if (detectCompletion != NULL) detectCompletion(YES, substring, substringRange);
+        }
+        
+    }];
+}
+
 @end
 
 

@@ -16,6 +16,8 @@
 
 #pragma mark - verify extension
 
+typedef void(^DetectForeignWordCompletion)(BOOL hasForeignWord, NSString *foreignWordText, NSRange foreignWordRange);
+
 /**
  verify extension
  */
@@ -27,6 +29,8 @@
  @return BOOL
  */
 + (BOOL)isValidString:(id)obj;
+
+- (void)detectForeignWordCompletion:(DetectForeignWordCompletion)detectCompletion;
 
 @end
 
