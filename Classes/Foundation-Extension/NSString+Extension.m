@@ -75,7 +75,9 @@
         // Collect numbers.
         [scanner scanCharactersFromSet:numbers intoString:&tempStr];
         
-        [numberString appendString:tempStr];
+        if (tempStr != nil) {
+            [numberString appendString:tempStr];
+        }
         
         tempStr = @"";
     }
