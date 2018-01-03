@@ -8,10 +8,6 @@
 
 #import "AppDelegate.h"
 
-#import "UIStoryboard+Extension.h"
-
-#import "UIApplication+Extension.h"
-
 @interface AppDelegate ()
 
 @end
@@ -21,12 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    [UIStoryboard setStoryboardNames:@[@"Main",
-                                       @"MRUIKit",
-                                       @"MRFoundation"]];
-    
-    self.window.rootViewController = [UIStoryboard matchControllerForIdentifier:@"ROOT"];
     
     return YES;
 }
