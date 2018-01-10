@@ -12,7 +12,7 @@
 
 @interface RootViewController ()
 
-@property (nonatomic, weak) IBOutlet MRImageView *imageView;
+@property (nonatomic, weak) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -21,16 +21,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    [NSTimer scheduledTimerWithTimeInterval:2 repeats:YES block:^(NSTimer * _Nonnull timer) {
-        __block UIColor *color = [UIColor colorWithRed:(arc4random()%255)/255.0 green:(arc4random()%255)/255.0 blue:(arc4random()%255)/255.0 alpha:1];
-        [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            self.imageView.imageRenderingColor = color;
-            color = nil;
-        } completion:NULL];
-        
-    }];
-    
     
 }
 
