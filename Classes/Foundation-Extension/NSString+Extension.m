@@ -186,10 +186,12 @@
             maxSize = CGSizeMake(CGFLOAT_MAX, frame.size.height);
             boundingRect = [self boundingRectWithSize:maxSize options:opts attributes:attributes context:nil];
             boundingRect.size.width = ceilf(boundingRect.size.width);
+            boundingRect.size.height = ceilf(boundingRect.size.height);
             
         } else {
             maxSize = CGSizeMake(frame.size.width, CGFLOAT_MAX);
             boundingRect = [self boundingRectWithSize:maxSize options:opts attributes:attributes context:nil];
+            boundingRect.size.width = ceilf(boundingRect.size.width);
             boundingRect.size.height = ceilf(boundingRect.size.height);
         }
         
