@@ -185,7 +185,7 @@
         if (option == CalculateOptionWidth) {
             maxSize = CGSizeMake(CGFLOAT_MAX, frame.size.height);
             boundingRect = [self boundingRectWithSize:maxSize options:opts attributes:attributes context:nil];
-            boundingRect.size.width += ceilf(boundingRect.size.width);
+            boundingRect.size.width = ceilf(boundingRect.size.width);
             
         } else {
             maxSize = CGSizeMake(frame.size.width, CGFLOAT_MAX);
