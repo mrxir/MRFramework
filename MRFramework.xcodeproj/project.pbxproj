@@ -27,6 +27,7 @@
 		6775767E1F11162D00715F6B /* MRFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6775767D1F11162C00715F6B /* MRFramework.podspec */; };
 		677576811F11165F00715F6B /* UIApplication+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 677576801F11165F00715F6B /* UIApplication+Extension.m */; };
 		67D4E0591F32E6B0001CC534 /* NSURL+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D4E0581F32E6B0001CC534 /* NSURL+Extension.m */; };
+		A3E4F8FF207B59AF0055D1A1 /* UITextView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E4F8FE207B59AF0055D1A1 /* UITextView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,8 @@
 		677576801F11165F00715F6B /* UIApplication+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Extension.m"; sourceTree = "<group>"; };
 		67D4E0571F32E6B0001CC534 /* NSURL+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Extension.h"; sourceTree = "<group>"; };
 		67D4E0581F32E6B0001CC534 /* NSURL+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Extension.m"; sourceTree = "<group>"; };
+		A3E4F8FD207B59AF0055D1A1 /* UITextView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+Extension.h"; sourceTree = "<group>"; };
+		A3E4F8FE207B59AF0055D1A1 /* UITextView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +181,8 @@
 				670F487D1F15BB9400C20F4E /* UIImage+Extension.m */,
 				670F487F1F15C42900C20F4E /* UINavigationBar+Extension.h */,
 				670F48801F15C42900C20F4E /* UINavigationBar+Extension.m */,
+				A3E4F8FD207B59AF0055D1A1 /* UITextView+Extension.h */,
+				A3E4F8FE207B59AF0055D1A1 /* UITextView+Extension.m */,
 			);
 			path = "UIKit-Extension";
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 				670413581F02344B005BDF55 /* NSString+Extension.m in Sources */,
 				670413391F0211EB005BDF55 /* AppDelegate.m in Sources */,
 				670413601F024CE9005BDF55 /* UIView+Extension.m in Sources */,
+				A3E4F8FF207B59AF0055D1A1 /* UITextView+Extension.m in Sources */,
 				670413661F025715005BDF55 /* UIStoryboard+Extension.m in Sources */,
 				670F48811F15C42900C20F4E /* UINavigationBar+Extension.m in Sources */,
 				670413361F0211EB005BDF55 /* main.m in Sources */,
