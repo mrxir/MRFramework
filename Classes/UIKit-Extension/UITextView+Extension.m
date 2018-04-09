@@ -20,7 +20,7 @@
     placeHolderLabel.font = self.font;
     [self addSubview:placeHolderLabel];
     
-    [self setValue:placeholder forKey:@"_placeholderLabel"];
+    [self setValue:placeHolderLabel forKey:@"_placeholderLabel"];
 }
 
 @end
