@@ -12,15 +12,21 @@
 
 - (void)setPlaceholder:(NSString *)placeholder
 {
-    UILabel *placeHolderLabel = [[UILabel alloc] init];
+    UILabel *placeHolderLabel = [self viewWithTag:1924];
+    
+    if (!placeHolderLabel) {
+        placeHolderLabel = [[UILabel alloc] init];
+        placeHolderLabel.tag = 1924;
+        [self addSubview:placeHolderLabel];
+        [self setValue:placeHolderLabel forKey:@"_placeholderLabel"];
+    }
+    
     placeHolderLabel.text = placeholder;
     placeHolderLabel.numberOfLines = 0;
     placeHolderLabel.textColor = [UIColor lightGrayColor];
     [placeHolderLabel sizeToFit];
     placeHolderLabel.font = self.font;
-    [self addSubview:placeHolderLabel];
     
-    [self setValue:placeHolderLabel forKey:@"_placeholderLabel"];
 }
 
 @end
