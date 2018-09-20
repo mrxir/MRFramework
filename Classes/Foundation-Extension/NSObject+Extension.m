@@ -18,12 +18,12 @@
 
 @implementation NSObject (Property)
 
-- (void)setObject:(id)object forKey:(NSString *)key
+- (void)_setObject:(id)object forKey:(NSString *)key
 {
     objc_setAssociatedObject(self, (__bridge const void * _Nonnull)(key), object, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (id)objectForKey:(NSString *)key
+- (id)_objectForKey:(NSString *)key
 {
     return objc_getAssociatedObject(self, (__bridge const void * _Nonnull)(key));
 }

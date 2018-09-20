@@ -23,9 +23,9 @@
  */
 @interface NSObject (Property)
 
-- (void)setObject:(id)object forKey:(NSString *)key;
+- (void)_setObject:(id)object forKey:(NSString *)key;
 
-- (id)objectForKey:(NSString *)key;
+- (id)_objectForKey:(NSString *)key;
 
 @property (nonatomic, strong) NSIndexPath *objectIndexPath;
 
