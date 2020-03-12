@@ -38,6 +38,25 @@
     return isValid;
 }
 
++ (BOOL)isNotEmpty:(id)obj
+{
+    BOOL isNotEmpty = NO;
+    
+    NSString *someString = (NSString *)obj;
+    
+    if ([someString respondsToSelector:@selector(isEqualToString:)]) {
+        if (![someString isEqualToString:@"nil"]
+            && ![someString isEqualToString:@"null"]
+            && ![someString isEqualToString:@"(null)"]
+            && ![someString isEqualToString:@"<null>"]
+            && [someString length] > 0) {
+            isNotEmpty = YES;
+        }
+    }
+    
+    return isNotEmpty;
+}
+
 - (void)detectForeignWordCompletion:(DetectForeignWordCompletion)detectCompletion
 {
     [self enumerateSubstringsInRange:NSMakeRange(0, self.length) options:NSStringEnumerationByComposedCharacterSequences usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
