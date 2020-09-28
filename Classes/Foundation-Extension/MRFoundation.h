@@ -11,7 +11,7 @@
 
 #import "NSObject+Extension.h"
 
-#import "NSString+Extension.h"
+#import "NSString+TangExtension.h"
 
 #import "NSJSONSerialization+Extension.h"
 

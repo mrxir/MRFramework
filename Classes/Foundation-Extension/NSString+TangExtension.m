@@ -6,9 +6,9 @@
 //  Copyright © 2017年 MrXir. All rights reserved.
 //
 
-#import "NSString+Extension.h"
+#import "NSString+TangExtension.h"
 
-@implementation NSString (Extension)
+@implementation NSString (TangExtension)
 
 @end
 

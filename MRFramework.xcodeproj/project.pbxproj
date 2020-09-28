@@ -14,7 +14,7 @@
 		6704134E1F022DA2005BDF55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6704134D1F022DA2005BDF55 /* UIKit.framework */; };
 		670413501F022DAC005BDF55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6704134F1F022DAC005BDF55 /* Foundation.framework */; };
 		670413551F02303F005BDF55 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 670413541F02303F005BDF55 /* NSObject+Extension.m */; };
-		670413581F02344B005BDF55 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 670413571F02344B005BDF55 /* NSString+Extension.m */; };
+		670413581F02344B005BDF55 /* NSString+TangExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 670413571F02344B005BDF55 /* NSString+TangExtension.m */; };
 		6704135B1F023C07005BDF55 /* NSJSONSerialization+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6704135A1F023C07005BDF55 /* NSJSONSerialization+Extension.m */; };
 		670413601F024CE9005BDF55 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6704135F1F024CE9005BDF55 /* UIView+Extension.m */; };
 		670413631F0255AC005BDF55 /* UIControl+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 670413621F0255AC005BDF55 /* UIControl+Extension.m */; };
@@ -42,8 +42,8 @@
 		6704134F1F022DAC005BDF55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		670413531F02303F005BDF55 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
 		670413541F02303F005BDF55 /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
-		670413561F02344B005BDF55 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
-		670413571F02344B005BDF55 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		670413561F02344B005BDF55 /* NSString+TangExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TangExtension.h"; sourceTree = "<group>"; };
+		670413571F02344B005BDF55 /* NSString+TangExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TangExtension.m"; sourceTree = "<group>"; };
 		670413591F023C07005BDF55 /* NSJSONSerialization+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+Extension.h"; sourceTree = "<group>"; };
 		6704135A1F023C07005BDF55 /* NSJSONSerialization+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+Extension.m"; sourceTree = "<group>"; };
 		6704135C1F024BC7005BDF55 /* MRFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRFoundation.h; sourceTree = "<group>"; };
@@ -155,8 +155,8 @@
 				67D4E0581F32E6B0001CC534 /* NSURL+Extension.m */,
 				670413531F02303F005BDF55 /* NSObject+Extension.h */,
 				670413541F02303F005BDF55 /* NSObject+Extension.m */,
-				670413561F02344B005BDF55 /* NSString+Extension.h */,
-				670413571F02344B005BDF55 /* NSString+Extension.m */,
+				670413561F02344B005BDF55 /* NSString+TangExtension.h */,
+				670413571F02344B005BDF55 /* NSString+TangExtension.m */,
 				670413591F023C07005BDF55 /* NSJSONSerialization+Extension.h */,
 				6704135A1F023C07005BDF55 /* NSJSONSerialization+Extension.m */,
 				670413711F03D22A005BDF55 /* NSDictionary+Extension.h */,
@@ -243,6 +243,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -279,7 +280,7 @@
 				670413731F03D22A005BDF55 /* NSDictionary+Extension.m in Sources */,
 				67D4E0591F32E6B0001CC534 /* NSURL+Extension.m in Sources */,
 				677576811F11165F00715F6B /* UIApplication+Extension.m in Sources */,
-				670413581F02344B005BDF55 /* NSString+Extension.m in Sources */,
+				670413581F02344B005BDF55 /* NSString+TangExtension.m in Sources */,
 				670413391F0211EB005BDF55 /* AppDelegate.m in Sources */,
 				670413601F024CE9005BDF55 /* UIView+Extension.m in Sources */,
 				A3E4F8FF207B59AF0055D1A1 /* UITextView+Extension.m in Sources */,
