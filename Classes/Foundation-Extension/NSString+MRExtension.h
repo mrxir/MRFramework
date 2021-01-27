@@ -1,5 +1,5 @@
 //
-//  NSString+Extension.h
+//  NSString+MRExtension.h
 //  MRFramework
 //
 //  Created by MrXir on 2017/6/27.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (TangExtension)
+@interface NSString (MRExtension)
 
 @end
 

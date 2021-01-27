@@ -1,5 +1,5 @@
 //
-//  UIView+Extension.h
+//  UIView+MRExtension.h
 //  MRFramework
 //
 //  Created by MrXir on 2017/6/27.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (Extension)
+@interface UIView (MRExtension)
 
 @end
 

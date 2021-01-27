@@ -1,14 +1,14 @@
 //
-//  NSJSONSerialization+Extension.m
+//  NSJSONSerialization+MRExtension.m
 //  MRFramework
 //
 //  Created by MrXir on 2017/6/27.
 //  Copyright © 2017年 MrXir. All rights reserved.
 //
 
-#import "NSJSONSerialization+Extension.h"
+#import "NSJSONSerialization+MRExtension.h"
 
-@implementation NSJSONSerialization (Extension)
+@implementation NSJSONSerialization (MRExtension)
 
 @end
 
@@ -16,7 +16,7 @@
 
 #pragma mark - string serialization extension
 
-@implementation NSJSONSerialization (String)
+@implementation NSJSONSerialization (ObjectToString)
 
 + (NSString *)stringWithJSONObject:(id)obj options:(NSJSONWritingOptions)opt error:(NSError *__autoreleasing *)error
 {

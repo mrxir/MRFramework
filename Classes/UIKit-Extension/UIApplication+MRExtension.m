@@ -1,14 +1,14 @@
 //
-//  UIApplication+Extension.m
+//  UIApplication+MRExtension.m
 //  MRFramework
 //
 //  Created by MrXir on 2017/7/8.
 //  Copyright © 2017年 MrXir. All rights reserved.
 //
 
-#import "UIApplication+Extension.h"
+#import "UIApplication+MRExtension.h"
 
-@implementation UIApplication (Extension)
+@implementation UIApplication (MRExtension)
 
 @end
 

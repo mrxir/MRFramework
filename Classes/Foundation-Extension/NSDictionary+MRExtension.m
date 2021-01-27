@@ -6,9 +6,9 @@
 //  Copyright © 2017年 MrXir. All rights reserved.
 //
 
-#import "NSDictionary+Extension.h"
+#import "NSDictionary+MRExtension.h"
 
-@implementation NSDictionary (Extension)
+@implementation NSDictionary (MRExtension)
 
 @end
 
@@ -16,7 +16,7 @@
 
 #pragma mark - dictionary formatter extension
 
-@implementation NSDictionary (Formatter)
+@implementation NSDictionary (FormatterToString)
 
 /* formatted into form style string */
 /*================================================================*/

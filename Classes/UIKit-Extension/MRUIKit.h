@@ -9,18 +9,12 @@
 #ifndef MRUIKit_h
 #define MRUIKit_h
 
-#import "UIView+Extension.h"
+#import "UIView+MRExtension.h"
 
-#import "UIControl+Extension.h"
+#import "UIControl+MRExtension.h"
 
-#import "UIStoryboard+Extension.h"
+#import "UIStoryboard+MRExtension.h"
 
-#import "UIApplication+Extension.h"
-
-#import "UIImage+Extension.h"
-
-#import "UINavigationBar+Extension.h"
-
-#import "UITextView+Extension.h"
+#import "UIApplication+MRExtension.h"
 
 #endif /* MRUIKit_h */

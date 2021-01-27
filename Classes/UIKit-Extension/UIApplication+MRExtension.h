@@ -1,5 +1,5 @@
 //
-//  UIApplication+Extension.h
+//  UIApplication+MRExtension.h
 //  MRFramework
 //
 //  Created by MrXir on 2017/7/8.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIApplication (Extension)
+@interface UIApplication (MRExtension)
 
 @end
 

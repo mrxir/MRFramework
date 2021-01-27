@@ -1,14 +1,14 @@
 //
-//  UIStoryboard+Extension.m
+//  UIStoryboard+MRExtension.m
 //  MRFramework
 //
 //  Created by MrXir on 2017/6/27.
 //  Copyright © 2017年 MrXir. All rights reserved.
 //
 
-#import "UIStoryboard+Extension.h"
+#import "UIStoryboard+MRExtension.h"
 
-@implementation UIStoryboard (Extension)
+@implementation UIStoryboard (MRExtension)
 
 @end
 

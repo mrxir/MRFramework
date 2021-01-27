@@ -1,5 +1,5 @@
 //
-//  UIStoryboard+Extension.h
+//  UIStoryboard+MRExtension.h
 //  MRFramework
 //
 //  Created by MrXir on 2017/6/27.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIStoryboard (Extension)
+@interface UIStoryboard (MRExtension)
 
 @end
 
